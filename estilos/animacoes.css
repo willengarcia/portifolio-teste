@@ -1,0 +1,45 @@
+@charset "UTF-8";
+div#foto #seta{
+    animation-name: pulsar;
+    animation-duration: 0.5s;
+    animation-delay: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes pulsar {
+    0%{
+        transform: scale(100%);
+    }
+    100%{
+        transform: scale(110%);
+    }
+}
+ul img{
+    animation-name: iluminar;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+    background-color: azure;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    width: 50px;
+    height: 50px;
+}
+@keyframes iluminar {
+    0%{
+        border-left:1px solid rgba(255, 0, 0, 0.5);
+    }
+    25%{
+        border-top:1px solid rgb(255, 136, 0);
+    }
+    50%{
+        border-right:1px solid rgb(97, 139, 0);
+    }
+    75%{
+        border-bottom:1px solid rgb(0, 255, 34);
+    }
+    100%{
+        border:1px solid rgb(40, 151, 127);
+    }
+}
