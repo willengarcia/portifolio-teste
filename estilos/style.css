@@ -17,48 +17,48 @@
     margin: 0%;
     box-sizing: content-box;
 }
+body{
+    background-color: rgb(0, 6, 24);
+}
 header{
     background-image: url('../imagens/fundo_header.jpg');
     background-attachment: fixed;
     background-size: cover;
-    position: relative;
     width: 100%;
     text-align: justify;
 }
-header li{
-    display: inline-block;
+nav{
+    position: fixed;
+    top: 0%;
+    left: 95%;
+    width: 5%;
+}
+nav li{
     list-style-type: none;
     margin: 10px;
 }
-header a img{
-    width: 50px;
-    border-radius: 50%;
-}
-nav{
-    background-color: rgba(0, 6, 24, 0.952);
-    position: fixed;
-    top: 0px;
-    left: 0%;
+nav a img{
     width: 100%;
-}
+    border-radius: 50%;
 
+}
 nav ul{
     float: right;
 }
 div#foto{
     margin: auto;
-    margin-top: 5%;
     width: 80%;
 }
 div#foto h1{
-    width: 800px;
-    font-size: 50px;
+    width:78%;
+    margin: auto;
+    font-size: 65px;
     font-family: "Acme", sans-serif;
     color: aliceblue;
+    display: inline-block;
 }
-div#foto h1, div#foto #avatar{
-    float: left;
-    margin: 10px;
+div#foto #avatar{
+    width: 20%;
 }
 div#foto hr{
     clear: both;
@@ -75,4 +75,48 @@ div#foto #seta{
     position: relative;
     left: 50%;
     width: 170px;
+}
+
+/* Configuração do Article */
+
+article#basico{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+article#basico div h2{
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    color: aliceblue;
+    text-align: justify;
+}
+article#basico div{
+    max-width: 40%;
+    margin: 2% auto;
+    padding: 25px 10px;
+    border-radius: 5%;
+    border: 1px solid white;
+    box-shadow: 0px 0px 7px rgba(145, 145, 214, 0.658);
+}
+article#basico div iframe{
+    width: 80%;
+    height: 650px;
+    margin: auto;
+    display: block;
+    background-color: rgba(240, 255, 255, 0.562);
+    border-radius: 2%;
+}
+div.order-1{
+    order: 1;
+}
+div.order-2{
+    order: 3;
+}
+div.order-3{
+    order: 2;
+}
+div.order-4{
+    order: 4;
 }
