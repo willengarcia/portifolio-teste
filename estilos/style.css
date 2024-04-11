@@ -11,7 +11,8 @@
     font-family: "Acme", sans-serif;
     font-weight: 400;
     font-style: normal;
-}  
+}
+
 *{
     padding: 0%;
     margin: 0%;
@@ -20,6 +21,10 @@
 body{
     background-color: black;
     color: aliceblue;
+}
+p::selection{
+    background-color: rgb(43, 25, 34);
+    color: rgba(255, 255, 7, 0.726);;
 }
 /* Navegador de links */
 
@@ -36,7 +41,6 @@ nav li{
 nav a img{
     width: 100%;
     border-radius: 50%;
-
 }
 nav ul{
     float: right;
@@ -51,22 +55,37 @@ header{
 header > #eu {
     border-radius: 5%;
     margin: 2%;
+    margin-right: 5%;
     float: left;
 }
-header > h1, header > p {
-    width: 70%;
+
+header > h1 {
+    text-align: justify;
+    font-size: 300%;
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: rgba(255, 255, 7, 0.726);
+}
+header > p {
+    font-size: 150%;
+    width: 50%;
     margin: auto;
 }
-header > a {
-    border-top: 1px solid white;
-    border-left: 1px solid white;
-    border-bottom: 1px solid white;
-    padding-top: 14px;
+header > button {
+    font-size: 150%;
+    border-radius: 5%;
+    margin: auto;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    display: block;
 }
-header > a #seta {
-    margin-left: 10px;
-    background-color: aliceblue;
+header > #seta{
     border-radius: 50%;
+    color: rgb(255, 251, 0);
 }
 /* Configuração do Article */
 
