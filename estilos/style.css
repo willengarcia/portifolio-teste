@@ -46,8 +46,9 @@ nav a img{
     border-radius: 50%;
 }
 nav ul{
-    float: right;
-
+    float: none;
+    margin: auto;
+    width: 80%;
 }
 
 /*Apresentação */
