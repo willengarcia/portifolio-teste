@@ -27,12 +27,12 @@
         color: rgba(255, 255, 7, 0.726);;
     }
     
-    
     /* Navegador de links */
     nav{
         position: fixed;
         top: 0%;
         left: 95%;
+        width: auto;
     }
     nav li{
         list-style-type: none;
