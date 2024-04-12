@@ -186,7 +186,7 @@ article#basico div h2{
 }
 article#basico div{
     margin: 2% auto;
-    padding: 25px 10px;
+    padding: 25px 0px;
     border-radius: 5%;
     border: 1px solid white;
     box-shadow: 0px 0px 7px rgba(145, 145, 214, 0.658);
