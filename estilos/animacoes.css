@@ -1,20 +1,22 @@
 @charset "UTF-8";
-div#foto #seta{
+header button{
     animation-name: pulsar;
-    animation-duration: 0.5s;
+    animation-duration: 0.7s;
     animation-delay: 1s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
+    position: relative;
 }
 @keyframes pulsar {
     0%{
         transform: scale(100%);
+        bottom: 15%;
     }
     100%{
         transform: scale(110%);
+        bottom: 20%;
     }
 }
-
 ul img{
     animation-name: iluminar;
     animation-duration: 2s;
@@ -28,9 +30,14 @@ ul img{
     height: 50px;
     transition: all 0.3s;
 }
-ul img:hover{
+.infor button {
+    transition: all 0.5s;
+}
+ul img:hover, .infor button:hover{
     background-color: rgb(233, 248, 14);
-    transform: scale(110%) rotate(10deg);
+    transform: scale(110%);
+    cursor: pointer;
+    color: black;
 }
 @keyframes iluminar {
     0%{
@@ -49,10 +56,6 @@ ul img:hover{
         border:1px solid rgb(40, 151, 127);
     }
 }
-header{
-    transition: 2s;
-}
-header:hover{
-    background-position: 100% 100%;
-}
+
+
 

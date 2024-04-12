@@ -1,0 +1,212 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+.nunito {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+.acme-regular {
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: content-box;
+}
+@media screen and (min-width:993px) and (max-width:1700px){
+    body{
+        background-color: black;
+        color: aliceblue;
+    }
+    p::selection{
+        background-color: rgb(43, 25, 34);
+        color: rgba(255, 255, 7, 0.726);;
+    }
+    
+    
+    /* Navegador de links */
+    nav{
+        position: fixed;
+        top: 0%;
+        left: 95%;
+    }
+    nav li{
+        list-style-type: none;
+        margin: 10px;
+        display: block;
+    }
+    nav a img{
+        width: 50px;
+        height: 98%;
+        border-radius: 50%;
+    }
+    nav ul{
+        float: right;
+    }
+    
+    /*Apresentação */
+    header{
+        width: 95%;
+        min-width: 1050px;
+        margin: auto;
+        margin-bottom: 10%;
+        cursor: url('../imagens/cursor.png');
+    }
+    header > #eu {
+        border-radius: 5%;
+        margin: 2%;
+        margin-right: 5%;
+        float: left;
+        width: auto;
+    }
+    header > h1 {
+        text-align: justify;
+        font-size: 300%;
+        width: 90%;
+        margin: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        color: rgba(255, 255, 7, 0.726);
+    }
+    header > p {
+        font-size: 150%;
+        width: 50%;
+        margin: auto;
+    }
+    header > button {
+        margin: auto;
+        margin-top: 15%;
+        background-color: black;
+        display: block;
+        cursor: pointer;
+        border: none;
+        display: block;
+    }
+    header > button > img{
+        border-radius: 50%;
+        color: black;
+        width: 200%;
+        height: 50%;
+        position: relative;
+        left: 0%;
+        display: block;
+    }
+    
+    /* Configuração do Article Básico */
+    article#tecnologia{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        clear: both;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        min-width: 1050px;
+    }
+    article aside {
+        width: 42%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        clear: both;
+        border-radius: 10%;
+    }
+    article aside div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        clear: both;
+        margin: 2%;
+        width: 40%;
+    }
+    article aside div img {
+        width: 76%;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 20%;
+    }
+    
+    div.infor{
+        width: 42%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        clear: both;
+        border-radius: 10%;
+    }
+    aside div h2, .infor > h2 {
+        font-size: 230%;
+    }
+    .fulline {
+        flex-basis: 100%;
+    }
+    .grade{
+        flex: 0 0 45%;
+    }
+    .grade li {
+        list-style-type: none;
+        margin: 8%;
+        font-size: 120%;
+    }
+    .infor button{
+        margin-top: 5%;
+        width: 30%;
+        padding: 3%;
+        background-color: darkcyan;
+        font-size: 120%;
+        color: white;
+    }
+    /* Configuração do Article Básico */
+    
+    article#basico{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        clear: both;
+        min-width: 1050px;
+    }
+    article#basico div h2{
+        width: 80%;
+        margin: auto;
+        margin-top: 10px;
+        color: aliceblue;
+        text-align: justify;
+    }
+    article#basico div{
+        max-width: 40%;
+        margin: 2% auto;
+        padding: 25px 10px;
+        border-radius: 5%;
+        border: 1px solid white;
+        box-shadow: 0px 0px 7px rgba(145, 145, 214, 0.658);
+    }
+    article#basico div iframe{
+        width: 80%;
+        height: 650px;
+        margin: auto;
+        display: block;
+        background-color: rgba(240, 255, 255, 0.562);
+        border-radius: 2%;
+    }
+    div.order-1{
+        order: 1;
+    }
+    div.order-2{
+        order: 3;
+    }
+    div.order-3{
+        order: 2;
+    }
+    div.order-4{
+        order: 4;
+    }
+}

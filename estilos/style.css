@@ -12,7 +12,6 @@
     font-weight: 400;
     font-style: normal;
 }
-
 *{
     padding: 0%;
     margin: 0%;
@@ -26,72 +25,154 @@ p::selection{
     background-color: rgb(43, 25, 34);
     color: rgba(255, 255, 7, 0.726);;
 }
-/* Navegador de links */
 
+
+/* Navegador de links */
 nav{
     position: fixed;
-    top: 0%;
-    left: 95%;
-    width: 5%;
+    bottom: 0%;
+    left: 0%;
+    background-color: rgba(0, 0, 0, 0.938);
+    width: 100%;
 }
 nav li{
     list-style-type: none;
+    display: inline-table;
     margin: 10px;
 }
 nav a img{
-    width: 100%;
+    width: 50px;
+    height: 98%;
     border-radius: 50%;
 }
 nav ul{
     float: right;
+
 }
 
 /*Apresentação */
 header{
     width: 95%;
+    min-width: 350px;
     margin: auto;
+    margin-bottom: 10%;
+    cursor: url('../imagens/cursor.png');
 }
-
 header > #eu {
-    border-radius: 5%;
+    border-radius: 50%;
     margin: 2%;
     margin-right: 5%;
     float: left;
+    width: 100px;
 }
-
 header > h1 {
     text-align: justify;
-    font-size: 300%;
     width: 90%;
     margin: auto;
     margin-top: 5%;
     margin-bottom: 5%;
     color: rgba(255, 255, 7, 0.726);
+    font-size: 150%;
 }
 header > p {
-    font-size: 150%;
-    width: 50%;
+    font-size: 120%;
+    width: 90%;
     margin: auto;
 }
 header > button {
-    font-size: 150%;
-    border-radius: 5%;
     margin: auto;
     margin-top: 15%;
-    margin-bottom: 15%;
-    color: rgb(255, 255, 255);
     background-color: black;
     display: block;
+    cursor: pointer;
+    border: none;
+    display: none;
+
 }
-header > #seta{
+header > button > img{
     border-radius: 50%;
-    color: rgb(255, 251, 0);
+    color: black;
+    width: 200%;
+    height: 50%;
+    position: relative;
+    left: 0%;
+    display: none;
 }
-/* Configuração do Article */
+
+/* Configuração do Article Básico */
+article#tecnologia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    clear: both;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: auto;
+}
+article aside {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    clear: both;
+    border-radius: 10%;
+    width: auto;
+}
+article aside div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    clear: both;
+    margin: 2%;
+    width: auto;
+}
+article aside div img {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20%;
+    width: 20%;
+}
+
+div.infor{
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    clear: both;
+    border-radius: 10%;
+}
+aside div h2, .infor > h2 {
+    font-size: 150%;
+}
+.fulline {
+    flex-basis: 100%;
+    margin-left: 25%;
+}
+.grade{
+    flex: 0 0 20%;
+}
+.grade li {
+    list-style-type: none;
+    margin: 8%;
+    font-size: 120%;
+}
+.infor button{
+    margin-top: 5%;
+    width: 20%;
+    padding: 3%;
+    background-color: darkcyan;
+    font-size: 75%;
+    color: white;
+}
+/* Configuração do Article Básico */
 
 article#basico{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     clear: both;
@@ -104,7 +185,6 @@ article#basico div h2{
     text-align: justify;
 }
 article#basico div{
-    max-width: 40%;
     margin: 2% auto;
     padding: 25px 10px;
     border-radius: 5%;
