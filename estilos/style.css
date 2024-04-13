@@ -48,7 +48,7 @@ nav a img{
 nav ul{
     float: none;
     margin: auto;
-    width: 95%;
+    width: max-content;
 }
 
 /*Apresentação */
