@@ -194,7 +194,7 @@
         height: 650px;
         margin: auto;
         display: block;
-        background-color: rgba(240, 255, 255, 0.562);
+        background-color: rgb(255, 255, 255);
         border-radius: 2%;
     }
     div.order-1{ /* Android */
