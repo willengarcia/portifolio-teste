@@ -221,4 +221,10 @@
     div.order-8{ /* Mosquito */
         order: 8;
     }
+    div.order-9{ /* Mosquito */
+        order: 9;
+    }
+    div.order-10{ /* Mosquito */
+        order: 10;
+    }
 }
